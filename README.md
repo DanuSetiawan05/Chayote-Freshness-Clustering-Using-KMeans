@@ -2,7 +2,7 @@
 
 Mengelompokkan (clustering) citra buah labu siam (chayote) berdasarkan fitur warna (RGB, HSV) dan tekstur (Local Binary Pattern) menggunakan K-Means, sebagai eksplorasi awal untuk melihat apakah karakteristik visual buah dapat membentuk kelompok yang berbeda.
 
-> Project ini dikerjakan sebagai tugas mata kuliah Data Mining Lanjut pada semester 7, dikerjakan secara berkelompok.
+> *Project ini dikerjakan sebagai tugas mata kuliah Data Mining Lanjut (Advanced Data Mining) pada semester 7, dikerjakan secara berkelompok.*
 
 ## Latar Belakang
 
@@ -21,11 +21,11 @@ Kesegaran buah labu siam dapat memengaruhi kualitas dan daya jualnya. Secara vis
 
 ## Catatan Penting Mengenai Pendekatan
 
-Dataset citra pada project ini belum memiliki label ground-truth kesegaran (misalnya kategori "Segar" vs "Tidak Segar" yang ditentukan manual/pakar). Karena itu, pendekatan yang digunakan adalah **clustering (unsupervised)**, bukan klasifikasi (supervised). Hasil cluster yang terbentuk merepresentasikan pengelompokan berdasarkan kemiripan fitur visual, dan belum tentu berkorespondensi langsung dengan tingkat kesegaran sebenarnya tanpa verifikasi manual lebih lanjut.
+Dataset citra pada project ini belum memiliki label ground-truth kesegaran (misalnya kategori "Segar" vs "Tidak Segar" yang ditentukan manual/pakar). Karena itu, pendekatan yang digunakan adalah clustering (unsupervised), bukan klasifikasi (supervised). Hasil cluster yang terbentuk merepresentasikan pengelompokan berdasarkan kemiripan fitur visual, dan belum tentu berkorespondensi langsung dengan tingkat kesegaran sebenarnya tanpa verifikasi manual lebih lanjut.
 
 ## Dataset
 
-Dataset terdiri dari **2069 foto buah labu siam**, gabungan dari 4 anggota kelompok (masing-masing memotret dengan kamera/HP sendiri), yang kemudian digabungkan menjadi satu folder sebelum diproses.
+Dataset terdiri dari 2069 foto buah labu siam, gabungan dari 3 anggota kelompok (masing-masing memotret dengan kamera/HP sendiri), yang kemudian digabungkan menjadi satu folder sebelum diproses.
 
 ## Metodologi
 
@@ -52,7 +52,7 @@ Jumlah cluster optimal: **k=2** (dipilih berdasarkan Silhouette Score tertinggi 
 ## Keterbatasan
 
 - Belum ada label ground-truth kesegaran, sehingga cluster yang terbentuk adalah pengelompokan berdasarkan kemiripan visual, bukan validasi langsung terhadap tingkat kesegaran.
-- Karena foto berasal dari 4 kamera/HP berbeda, ada kemungkinan variasi pencahayaan dan white balance antar sumber foto turut memengaruhi fitur warna yang diekstraksi, bukan semata-mata karena perbedaan tingkat kesegaran buah.
+- Karena foto berasal dari 3 kamera/HP berbeda, ada kemungkinan variasi pencahayaan dan white balance antar sumber foto turut memengaruhi fitur warna yang diekstraksi, bukan semata-mata karena perbedaan tingkat kesegaran buah.
 
 ## Tech Stack
 
@@ -95,8 +95,6 @@ Project ini dikerjakan secara berkelompok:
 | Mochammad Irsyad Kurniawan |
 | Muhammad Ilza Batistuta |
 | **Muhammad Danu Setiawan** |
-
-> Catatan: sesuaikan daftar anggota di atas jika komposisi kelompok untuk project ini berbeda.
 
 ## Lisensi
 
